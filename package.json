@@ -1,70 +1,50 @@
 {
-  "name": "react-clap-button",
-  "description": "A Medium like clap button",
-  "homepage": "https://github.com/kikobeats/react-clap-button",
-  "version": "2.0.0",
-  "main": "src/index.js",
-  "author": {
-    "email": "josefrancisco.verdu@gmail.com",
-    "name": "Kiko Beats",
-    "url": "https://github.com/Kikobeats"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mthorning/react-clap-button.git"
-  },
-  "keywords": ["button", "clap", "medium", "reaction"],
-  "dependencies": {
-    "mo-js": "~0.288.2",
-    "polished": "~3.1.0",
-    "react-transition-group": "^4.0.0"
-  },
-  "devDependencies": {
-    "babel-cli": "latest",
-    "babel-eslint": "latest",
-    "babel-plugin-transform-class-properties": "latest",
-    "babel-plugin-transform-object-rest-spread": "latest",
-    "babel-plugin-transform-react-constant-elements": "latest",
-    "babel-plugin-transform-react-inline-elements": "latest",
-    "babel-plugin-transform-react-pure-class-to-function": "latest",
-    "babel-plugin-transform-react-remove-prop-types": "latest",
-    "babel-preset-env": "latest",
-    "babel-preset-react": "latest",
-    "eslint-plugin-jsx-a11y": "latest",
-    "husky": "latest",
-    "lint-staged": "latest",
-    "npm-check-updates": "latest",
-    "prettier-standard": "latest",
-    "prop-types": "latest",
-    "react": "^16",
-    "react-dom": "^16",
-    "react-feather": "latest",
-    "size-limit": "latest",
-    "standard": "latest",
-    "standard-markdown": "latest"
-  },
-  "engines": {
-    "node": ">= 8"
-  },
-  "files": ["lib"],
-  "scripts": {
-    "postVersion": "git push && git push --tags"
-  },
-  "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": ["prettier-standard", "git add"]
-  },
-  "peerDependencies": {
-    "react": ">= 16 < 17"
-  },
-  "standard": {
-    "globals": ["React", "fetch"],
-    "parser": "babel-eslint",
-    "plugins": ["jsx-a11y"]
-  }
+    "name": "react-clap-button",
+    "description": "A Medium like clap button",
+    "homepage": "https://github.com/kikobeats/react-clap-button",
+    "version": "2.0.0",
+    "main": "src/index.js",
+    "author": {
+        "email": "josefrancisco.verdu@gmail.com",
+        "name": "Kiko Beats",
+        "url": "https://github.com/Kikobeats"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mthorning/react-clap-button.git"
+    },
+    "keywords": [
+        "button",
+        "clap",
+        "medium",
+        "reaction"
+    ],
+    "dependencies": {
+        "@emotion/core": "^10.0.10",
+        "emotion-theming": "^10.0.10",
+        "@emotion/styled": "^10.0.12",
+        "mo-js": "~0.288.2",
+        "polished": "~3.1.0",
+        "react-transition-group": "^4.0.0"
+    },
+    "devDependencies": {
+        "babel-cli": "latest",
+        "babel-plugin-transform-class-properties": "latest",
+        "babel-plugin-transform-object-rest-spread": "latest",
+        "babel-plugin-transform-react-constant-elements": "latest",
+        "babel-plugin-transform-react-inline-elements": "latest",
+        "babel-plugin-transform-react-pure-class-to-function": "latest",
+        "babel-plugin-transform-react-remove-prop-types": "latest",
+        "babel-preset-env": "latest",
+        "babel-preset-react": "latest",
+        "prettier": "^1.18.2",
+        "prop-types": "latest",
+        "react": "^16.8",
+        "react-dom": "^16.8",
+        "react-feather": "latest"
+    },
+    "scripts": {
+        "postVersion": "git push && git push --tags"
+    },
+    "license": "MIT"
 }
