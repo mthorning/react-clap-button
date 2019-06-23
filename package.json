@@ -3,7 +3,7 @@
   "description": "A Medium like clap button",
   "homepage": "https://github.com/kikobeats/react-clap-button",
   "version": "1.0.8",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
@@ -11,10 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kikobeats/react-clap-button.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kikobeats/react-clap-button/issues"
+    "url": "git+https://github.com/mthorning/react-clap-button.git"
   },
   "keywords": [
     "button",
@@ -25,14 +22,9 @@
   "dependencies": {
     "mo-js": "~0.288.2",
     "polished": "~3.1.0",
-    "react-transition-group": "^4.0.0",
-    "styled-components": "~4.3.0"
+    "react-transition-group": "^4.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-centered": "latest",
-    "@storybook/addon-options": "latest",
-    "@storybook/addon-viewport": "latest",
-    "@storybook/react": "latest",
     "babel-cli": "latest",
     "babel-eslint": "latest",
     "babel-plugin-transform-class-properties": "latest",
@@ -54,8 +46,7 @@
     "react-feather": "latest",
     "size-limit": "latest",
     "standard": "latest",
-    "standard-markdown": "latest",
-    "storybook-addon-jsx": "latest"
+    "standard-markdown": "latest"
   },
   "engines": {
     "node": ">= 8"
