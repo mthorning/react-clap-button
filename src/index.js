@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import mojs from 'mo-js'
 import { ThemeProvider } from 'emotion-theming'
 import ClapWrap from './components/ClapWrap'
 import ClapIcon from './components/ClapIcon'
@@ -30,7 +29,8 @@ const Clap = class extends React.Component {
         this.onClick = this.onClick.bind(this)
     }
 
-    componentDidMount() {
+    async componentDidMount() {
+        const mojs = await import('mo-js')
         const tlDuration = 300
         const triangleBurst = new mojs.Burst({
             parent: '#clap',
