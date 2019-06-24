@@ -21,6 +21,7 @@ const presets = [
 ]
 const plugins = [
     'transform-class-properties',
+    '@babel/plugin-transform-regenerator',
     '@babel/plugin-proposal-object-rest-spread',
     'babel-plugin-emotion',
     '@babel/plugin-syntax-dynamic-import',
