@@ -30,7 +30,7 @@ const Clap = class extends React.Component {
     }
 
     async componentDidMount() {
-        import('mo-js').then(mojs => {
+        import('mo-js').then(({ default: mojs }) => {
             const tlDuration = 300
             const triangleBurst = new mojs.Burst({
                 parent: '#clap',
