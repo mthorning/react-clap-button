@@ -21,8 +21,9 @@
     ],
     "dependencies": {
         "@emotion/core": "^10.0.10",
-        "emotion-theming": "^10.0.10",
         "@emotion/styled": "^10.0.12",
+        "babel-plugin-emotion": "^10.0.13",
+        "emotion-theming": "^10.0.10",
         "mo-js": "~0.288.2",
         "polished": "~3.1.0",
         "react-transition-group": "^4.0.0"
