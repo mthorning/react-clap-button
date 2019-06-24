@@ -51,5 +51,21 @@
     "files": [
         "lib"
     ],
-    "license": "MIT"
+    "engines": {
+        "node": ">= 8"
+    },
+    "license": "MIT",
+    "peerDependencies": {
+        "react": ">= 16 < 17"
+    },
+    "standard": {
+        "globals": [
+            "React",
+            "fetch"
+        ],
+        "parser": "babel-eslint",
+        "plugins": [
+            "jsx-a11y"
+        ]
+    }
 }
