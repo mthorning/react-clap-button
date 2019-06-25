@@ -1,0 +1,36 @@
+{
+  "env": {
+    "production": {
+      "plugins": [
+        "@babel/plugin-transform-react-constant-elements",
+        "@babel/transform-react-inline-elements",
+        "transform-react-pure-class-to-function",
+        [
+          "transform-react-remove-prop-types",
+          {
+            "removeImport": true
+          }
+        ]
+      ]
+    }
+  },
+  "plugins": [
+  "@babel/plugin-proposal-class-properties",
+  "@babel/plugin-proposal-object-rest-spread"
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            ">0.25%",
+            "not ie 11",
+            "not op_mini all"
+          ]
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
