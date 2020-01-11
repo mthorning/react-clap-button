@@ -1,4 +1,5 @@
-import styled, { css, keyframes } from 'styled-components'
+import { css } from '@emotion/core'
+import styled from '@emotion/styled'
 import { textStyles } from '../utils'
 
 const ClapCountTotal = styled.span`

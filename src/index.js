@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'emotion-theming'
 import ClapWrap from './components/ClapWrap'
 import ClapIcon from './components/ClapIcon'
 import ClapButton from './components/ClapButton'
@@ -24,10 +24,10 @@ const Clap = class extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      isClicked: props.count > 0,
+      isClicked: false,
       isHover: false
     }
-    this.onClick = this.onClick.bind(this)
+    this.handleClick = this.handleClick.bind(this)
   }
 
   componentDidMount () {
@@ -115,7 +115,7 @@ const Clap = class extends React.Component {
     return Object.assign({}, defaultTheme, theme)
   }
 
-  onClick () {
+  handleClick () {
     this.animationTimeline.replay()
     this.props.incrementCount()
 
@@ -131,7 +131,7 @@ const Clap = class extends React.Component {
         <ClapWrap isClicked={isClicked}>
           <ClapButton
             id='clap'
-            onClick={this.onClick}
+            onClick={this.handleClick}
             onMouseEnter={e => this.setState({ isHover: true })}
             onMouseLeave={e => this.setState({ isHover: false })}
             isHover={isHover && count === 0}

@@ -20,6 +20,7 @@
     "reaction"
   ],
   "dependencies": {
+    "@emotion/styled": "^10.0.27",
     "mo-js": "~0.288.2",
     "polished": "~3.1.0",
     "react-transition-group": "^4.0.0",

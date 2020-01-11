@@ -1,5 +1,6 @@
 import React from 'react'
-import styled, { css, keyframes } from 'styled-components'
+import { css } from '@emotion/core'
+import styled from '@emotion/styled'
 
 const Icon = styled.svg`
   ${({ isClicked, theme: { primaryColor, secondaryColor } }) => {

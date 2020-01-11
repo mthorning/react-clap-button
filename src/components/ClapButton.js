@@ -1,4 +1,5 @@
-import styled, { css, keyframes } from 'styled-components'
+import { css, keyframes } from '@emotion/core'
+import styled from '@emotion/styled'
 
 const shockwave = () => keyframes`
 0%{
